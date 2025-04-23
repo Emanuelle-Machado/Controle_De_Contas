@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="roxo_escuro">#303a52</color>
+    <color name="roxo_intermediario">#574b90</color>
+    <color name="roxo_claro">#9e579d</color>
+    <color name="rosa">#fc85ae</color>
 </resources>

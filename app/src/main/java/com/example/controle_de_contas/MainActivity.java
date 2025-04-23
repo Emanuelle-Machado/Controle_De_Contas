@@ -1,6 +1,7 @@
 package com.example.controle_de_contas;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +21,17 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void adicionar(View v){
+
+    }
+
+    public void editar(View v){
+
+    }
+
+    public void remover(View v){
+
     }
 }

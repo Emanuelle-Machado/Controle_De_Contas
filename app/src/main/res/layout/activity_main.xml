@@ -3,13 +3,85 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/campo_categoria"
+            android:textSize="20sp"
+            android:textColor="@color/roxo_intermediario"
+            android:id="@+id/txt_categoria"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:hint="@string/input_categoria"
+            android:id="@+id/ed_categoria" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="adicionar"
+            android:textSize="12sp"
+            android:text="@string/botao_adicionar"
+            android:id="@+id/btn_adicionar" />
+
+    </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="@string/titulo_contas_agrupadas"
+        android:textSize="30sp"
+        android:textColor="@color/roxo_intermediario"
+        android:layout_gravity="center"
+        android:id="@+id/txt_contas_agrupadas" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:id="@+id/lista_categorias"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end">
+
+            <Button
+                android:layout_width="110sp"
+                android:layout_height="wrap_content"
+                android:text="@string/botao_editar"
+                android:onClick="editar"
+                android:id="@+id/btn_editar" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/botao_remover"
+                android:onClick="remover"
+                android:id="@+id/btn_remover" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>

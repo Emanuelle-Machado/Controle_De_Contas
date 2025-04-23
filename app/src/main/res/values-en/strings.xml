@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Account control</string>
+    <string name="botao_adicionar">Add</string>
+    <string name="botao_remover">Remove</string>
+    <string name="botao_editar">Edit</string>
+    <string name="titulo_contas_agrupadas">Grouped accounts</string>
+    <string name="campo_categoria">Category:</string>
+    <string name="input_categoria">name of category</string>
+</resources>

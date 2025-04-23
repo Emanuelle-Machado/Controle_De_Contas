@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Controle_De_Contas</string>
+    <string name="app_name">Controle de contas</string>
+    <string name="botao_adicionar">Adicionar</string>
+    <string name="botao_remover">Remover</string>
+    <string name="botao_editar">Editar</string>
+    <string name="titulo_contas_agrupadas">Contas agrupadas</string>
+    <string name="campo_categoria">Categoria:</string>
+    <string name="input_categoria">nome da categoria</string>
 </resources>
