@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Account control</string>
+    <string name="app_name">Bill management</string>
     <string name="botao_adicionar">Add</string>
     <string name="botao_remover">Remove</string>
     <string name="botao_editar">Edit</string>
-    <string name="titulo_contas_agrupadas">Grouped accounts</string>
+    <string name="titulo_contas_agrupadas">Categorized bills</string>
     <string name="campo_categoria">Category:</string>
     <string name="input_categoria">name of category</string>
     <string name="titulo_categoria">Category</string>
@@ -12,7 +12,7 @@
     <string name="input_descricao">description</string>
     <string name="campo_valor">Value:</string>
     <string name="input_valor">R$ 0,0</string>
-    <string name="campo_vencimento">Payday:</string>
+    <string name="campo_vencimento">Due date:</string>
     <string name="input_vencimento">day/month/year</string>
     <string name="botao_salvar">Save</string>
 </resources>
