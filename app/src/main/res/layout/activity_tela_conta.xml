@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TelaConta">
+
+    <TextView
+        android:id="@+id/txt_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/titulo_categoria"
+        android:textColor="@color/roxo_intermediario"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_add_contas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/txt_descricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/campo_descricao"
+                android:textColor="@color/roxo_intermediario"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/ed_descricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_descricao" />
+
+            <TextView
+                android:id="@+id/txt_valor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/campo_valor"
+                android:textColor="@color/roxo_intermediario"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/ed_valor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_valor" />
+
+            <TextView
+                android:id="@+id/txt_vencimento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/campo_vencimento"
+                android:textColor="@color/roxo_intermediario"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/ed_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_vencimento"
+                android:focusable="false"
+                android:clickable="true" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_adicionar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:onClick="adicionar"
+            android:text="@string/botao_adicionar" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lista_contas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_marginBottom="20dp"
+        android:divider="@color/rosa"
+        android:dividerHeight="1dp"
+        android:scrollingCache="true" />
+
+    <Button
+        android:id="@+id/btn_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/botao_salvar"
+        android:onClick="voltar" />
+
+</LinearLayout>

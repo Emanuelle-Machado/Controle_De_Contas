@@ -7,4 +7,12 @@
     <string name="titulo_contas_agrupadas">Grouped accounts</string>
     <string name="campo_categoria">Category:</string>
     <string name="input_categoria">name of category</string>
+    <string name="titulo_categoria">Category</string>
+    <string name="campo_descricao">Description:</string>
+    <string name="input_descricao">description</string>
+    <string name="campo_valor">Value:</string>
+    <string name="input_valor">R$ 0,0</string>
+    <string name="campo_vencimento">Payday:</string>
+    <string name="input_vencimento">day/month/year</string>
+    <string name="botao_salvar">Save</string>
 </resources>

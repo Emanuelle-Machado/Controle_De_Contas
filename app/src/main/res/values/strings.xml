@@ -6,4 +6,12 @@
     <string name="titulo_contas_agrupadas">Contas agrupadas</string>
     <string name="campo_categoria">Categoria:</string>
     <string name="input_categoria">nome da categoria</string>
+    <string name="titulo_categoria">Categoria</string>
+    <string name="campo_descricao">Descrição:</string>
+    <string name="input_descricao">descrição</string>
+    <string name="campo_valor">Valor:</string>
+    <string name="input_valor">R$ 0,0</string>
+    <string name="campo_vencimento">Vencimento:</string>
+    <string name="input_vencimento">dia/mês/ano</string>
+    <string name="botao_salvar">Salvar</string>
 </resources>
