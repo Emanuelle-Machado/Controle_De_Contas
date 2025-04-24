@@ -59,8 +59,6 @@ public class Categoria implements Serializable {
 
     @Override
     public String toString() {
-        return "Categoria{" +
-                "descricao='" + descricao + '\'' +
-                '}';
+        return descricao + " - " + getQuantidadeContas() + "\n" + getTotal() + " " + getTotalPago() + " " + getTotalAPagar();
     }
 }

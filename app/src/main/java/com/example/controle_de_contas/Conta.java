@@ -3,6 +3,8 @@ package com.example.controle_de_contas;
 import java.io.Serializable;
 import java.util.Date;
 
+import java.text.SimpleDateFormat;
+
 public class Conta implements Serializable{
 
     private String descricao;
@@ -10,6 +12,7 @@ public class Conta implements Serializable{
     private double valor;
     private boolean paga = false;
     private Categoria categoria;
+    private SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
     public Conta(String descricao, Date vencimento, double valor, boolean paga) {
         this.descricao = descricao;
@@ -60,12 +63,7 @@ public class Conta implements Serializable{
 
     @Override
     public String toString() {
-        return "Conta" +
-                "descricao='" + descricao + '\'' +
-                ", vencimento=" + vencimento +
-                ", valor=" + valor +
-                ", paga=" + paga +
-                ", categoria=" + categoria +
-                '}';
+        String dataFormatada = dateFormat.format(vencimento);
+        return descricao + " " + (isPaga() ? "Paga" : "Não Paga") + "\n" + dataFormatada + " R$ " + valor;
     }
 }
